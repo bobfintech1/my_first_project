@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="post-entry">
+    <h1>{{ about.title }}</h1>
+    <h1>{{ about.body }}</h1>
+    <p>{{ about.author.username }}</p>
+    <h3> {{ about.date  }} </h3>
+
+
+</div>
+
+
+{% endblock %}

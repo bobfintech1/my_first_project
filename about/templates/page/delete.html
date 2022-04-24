@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="post-entry">
+    <h1>DELETE NEWS</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p> Точно хотите удалить"{{ about.title }}"</p>
+        <input type="submit" value="ДА" />
+    </form>
+
+    </form>
+</div>
+
+{% endblock %}
